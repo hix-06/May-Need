@@ -608,9 +608,9 @@ plt.show()
 
 ### Theoretical Notes:
 1. **Why K-Medoids vs. K-means**: 
-  - K-Medoids uses actual data points as cluster centers (medoids) rather than mean points (centroids).
-  - It's more robust to outliers and noise than K-means.
-  - It can work with any distance metric, not just Euclidean distance.
+   - K-Medoids uses actual data points as cluster centers (medoids) rather than mean points (centroids).
+   - It's more robust to outliers and noise than K-means.
+   - It can work with any distance metric, not just Euclidean distance.
 2. **Why Feature Scaling**: Like K-means, K-Medoids uses distance calculations that are sensitive to feature scaling. MinMaxScaler normalizes features to the same 0-1 range.
 3. **Why 3 Clusters**: Chosen for consistency with the K-means example, allowing for direct comparison.
 4. **Random State**: Set to 42 for reproducibility, ensuring the same initial medoid selection each time.
