@@ -550,14 +550,14 @@ plt.show()
    - **Why random_state=44?** Ensures reproducibility of the train/test split
 
 3. **Dendrograms**: 
-  - Why are they useful? Visualize the hierarchical structure of clusters and help determine the appropriate number of clusters.
-  - The vertical axis shows the distance or dissimilarity between clusters.
-  - The horizontal axis represents the samples.
+   - Why are they useful? Visualize the hierarchical structure of clusters and help determine the appropriate number of clusters.
+   - The vertical axis shows the distance or dissimilarity between clusters.
+   - The horizontal axis represents the samples.
 4. **Visualization Limitations**: 
-  - Only the first two features are plotted, which may not capture the full high-dimensional structure.
-  - The clusters shown in the scatter plots might not reflect the true clusters in the full feature space.
-4. **Note on Data Splitting**: Unlike supervised learning, there's typically no need to split data for unsupervised clustering. The split here might be to compare cluster distributions in different subsets.
- **Potential Data Issue**: In the code, y is set to the same as x, which doesn't use the actual class labels. This might make evaluation difficult.
+   - Only the first two features are plotted, which may not capture the full high-dimensional structure.
+   - The clusters shown in the scatter plots might not reflect the true clusters in the full feature space.
+5. **Note on Data Splitting**: Unlike supervised learning, there's typically no need to split data for unsupervised clustering. The split here might be to compare cluster distributions in different subsets.
+6. **Potential Data Issue**: In the code, y is set to the same as x, which doesn't use the actual class labels. This might make evaluation difficult.
 
 
 ---
