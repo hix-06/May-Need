@@ -607,14 +607,14 @@ plt.show()
 ```
 
 ### Theoretical Notes:
-- **Why K-Medoids vs. K-means**: 
+1. **Why K-Medoids vs. K-means**: 
   - K-Medoids uses actual data points as cluster centers (medoids) rather than mean points (centroids).
   - It's more robust to outliers and noise than K-means.
   - It can work with any distance metric, not just Euclidean distance.
-- **Why Feature Scaling**: Like K-means, K-Medoids uses distance calculations that are sensitive to feature scaling. MinMaxScaler normalizes features to the same 0-1 range.
-- **Why 3 Clusters**: Chosen for consistency with the K-means example, allowing for direct comparison.
-- **Random State**: Set to 42 for reproducibility, ensuring the same initial medoid selection each time.
-- **Visualization**: Uses a scatter plot with different colors for clusters and marks medoids with X symbols, showing the actual data points that serve as cluster centers.
-- **No Elbow Method**: Unlike the K-means example, this code doesn't include the elbow method to determine the optimal number of clusters.
-- **Computational Efficiency**: K-Medoids is generally more computationally expensive than K-means, especially for large datasets.
-- **Why sklearn_extra**: The sklearn_extra package is used because K-Medoids is not part of the core scikit-learn library.
+2. **Why Feature Scaling**: Like K-means, K-Medoids uses distance calculations that are sensitive to feature scaling. MinMaxScaler normalizes features to the same 0-1 range.
+3. **Why 3 Clusters**: Chosen for consistency with the K-means example, allowing for direct comparison.
+4. **Random State**: Set to 42 for reproducibility, ensuring the same initial medoid selection each time.
+5. **Visualization**: Uses a scatter plot with different colors for clusters and marks medoids with X symbols, showing the actual data points that serve as cluster centers.
+6. **No Elbow Method**: Unlike the K-means example, this code doesn't include the elbow method to determine the optimal number of clusters.
+7. **Computational Efficiency**: K-Medoids is generally more computationally expensive than K-means, especially for large datasets.
+8. **Why sklearn_extra**: The sklearn_extra package is used because K-Medoids is not part of the core scikit-learn library.
